@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+uvicorn
+motor
+pytest
+httpx
+pika
+confluent-kafka
