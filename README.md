@@ -11,6 +11,10 @@ API desenvolvida com **FastAPI** para gerenciamento assíncrono de pedidos. Eu c
 
 ---
 
+## Pré requisito
+
+- Docker instalado na máquina(https://www.docker.com/products/docker-desktop/)
+
 ## Links de Acesso
 
 ### API (Swagger UI)
@@ -27,6 +31,14 @@ http://localhost:15672
 - Senha: `guest`
 
 ---
+
+## Como Iniciar?
+
+Para que tudo se inicie de forma correta, deve-se utilizar um comando do Docker. Que também permitirá que o terminal fique livre.
+
+```bash
+docker compose up --build -d
+```
 
 ## Como Testar
 
