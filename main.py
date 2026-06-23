@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, status
 from pydantic import BaseModel
 import motor.motor_asyncio
 import pika
@@ -27,7 +27,7 @@ class Pedido(BaseModel):
     status: str = "PENDENTE"
 
 
-@app.post("/pedidos")
+@app.post("/pedidos", status_code=status.HTTP_201_CREATED)
 async def post_pedido(novo_pedido: Pedido):
     pedido = novo_pedido.model_dump()
 
@@ -59,7 +59,7 @@ async def post_pedido(novo_pedido: Pedido):
     return {"msg": "Pedido postado e ID gerado!", "ID": id_gerado}
 
 
-@app.get("/pedidos")
+@app.get("/pedidos", status_code=status.HTTP_200_OK)
 async def visualizar_pedidos():
     pedidos = await db.pedidos.find().to_list(length=100)
 

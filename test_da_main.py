@@ -18,7 +18,7 @@ def test_post(client):
             "quantidade": 1,
         },
     )
-    assert response.status_code == 200
+    assert response.status_code == 201
     assert "ID" in response.json()
 
 
