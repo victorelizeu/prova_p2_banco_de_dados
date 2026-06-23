@@ -3,7 +3,6 @@ from main import app
 import pytest
 
 
-# Precisei utilizar o pytest fixture, pois meu código tava dando erro antes e só com ele eu consegui resolver...
 @pytest.fixture(scope="module")
 def client():
     with TestClient(app) as c:
