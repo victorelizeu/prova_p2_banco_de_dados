@@ -34,7 +34,7 @@ http://localhost:15672
 
 ## Como Iniciar?
 
-Para que tudo se inicie de forma correta, deve-se utilizar um comando do Docker. Que também permitirá que o terminal fique livre.
+Para que tudo se inicie de forma correta, deve-se utilizar um comando do **Docker**. Que também permitirá que o terminal fique livre.
 
 ```bash
 docker compose up --build -d
