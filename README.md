@@ -42,7 +42,7 @@ docker compose up --build -d
 
 ## Como Testar
 
-Para garantir a conexão correta com o banco de dados e os serviços de mensagem dentro do ambiente Docker, execute:
+Para garantir a conexão correta com o banco de dados e os serviços de mensagem dentro do ambiente Docker, para assim rodar os testes, execute:
 
 ```bash
 docker compose exec api pytest
